@@ -1,0 +1,435 @@
+$color-one: #cdcdcd;
+$color-two: #a7abb0;
+$color-three: rgb(164, 168, 206);
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+
+
+}
+
+.loader {
+    margin: auto;
+    width: 650px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-one;
+}
+
+.container {
+    background-color: #afb0af;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.navContainer {
+    background-color: #84867b;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 950px;
+    min-width: 950px;
+    justify-content: space-around;
+
+    .linker {
+        color: $color-one;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            font-weight: bold;
+            color: #fdc714;
+            text-shadow: 2px 2px 7px black;
+        }
+    }
+
+
+
+
+}
+
+
+
+.place {
+    background-color: #84867b;
+    width: 950px;
+
+    margin: auto;
+
+    padding-bottom: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+
+    .search {
+        width:130px;
+
+    }
+
+}
+
+.spectral {
+    height: 40px;
+}
+
+
+.fizika {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #f4f2eb;
+    width: 950px;
+
+    .nameAtom {
+        display: flex;
+        font-size: 28px;
+        width: 200px;
+        padding-left: 15px;
+    }
+
+    .symbol {
+    
+        text-align: center;
+
+        width: 90px;
+        height: auto;
+        background-color: #b4d1d6;
+        border-radius: 7px;
+        font-size: 52px;
+        color: #e37303;
+        font-family: 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    .spImg {
+        height: 80px;
+    }
+
+
+
+    .imgHold {
+        width: 950px;
+
+
+    }
+
+    .atomicMass {
+        width: 200px;
+    }
+
+
+
+    model-viewer {
+        margin: auto;
+        cursor: grab;
+        display: flex;
+        height: 700px;
+        width: 950px;
+        border-color: #fd4a14;
+        overflow: hidden;
+        position: relative;
+        user-select: none;
+    }
+
+    .span {
+        width: 950px;
+        height: 2px;
+        border-bottom: solid 2px #828c82;
+    }
+}
+
+.fizika strong {
+    padding-top: 15px;
+}
+
+
+
+
+.view-button {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    color: #84867b;
+    cursor: pointer;
+    border-radius: 400px;
+
+    .arrowup {
+        align-items: center;
+
+        width: 24px;
+        height: 24px;
+        color: #7a9c99ac;
+        background-color: rgba(165, 206, 195, 0.43);
+
+        border-radius: 12px;
+        border: solid 3px #95beba7c;
+    }
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    min-width: 185px;
+    max-width: 185px;
+
+    .base {
+        max-width: 140px;
+        padding-left: 10px;
+
+    }
+
+}
+
+
+
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 64px);
+    grid-template-rows: repeat(10, 64px);
+    grid-gap: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.element {
+  
+    border: 1px solid #aaa;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    cursor: pointer;
+
+    .number {
+        font-size: 12px;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+
+    .name {
+        font-size: 9px;
+        position: absolute;
+        bottom: 3px;
+        left: 3px;
+    }
+}
+
+.element:hover {
+    transform: scale(1.4, 1.4);
+    z-index: 1;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .navContainer {
+        max-width: 780px;
+        min-width: 780px;
+ 
+
+        margin: auto;
+     
+    }
+    .periodic-table {
+        margin-top: 230px;
+        display: grid;
+        grid-template-columns: repeat(18, 36px);
+        grid-template-rows: repeat(10, 47px);
+        grid-gap: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .element {
+        top: 25px;
+        font-size: 22px;
+        .number {
+            font-size: 6;
+            top: 0px;
+            right: 1px;
+        }
+        .name {
+
+            color: transparent;
+
+        }
+
+    }
+    .fizika {
+        width: 780px;
+        .imgHold {
+            width: 780px;
+        }
+        model-viewer {
+
+            height: 500px;
+            width: 780px;
+
+        }
+        .span {
+            width: 780px;
+        }
+    }
+    .place {
+        width: 780px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      
+        
+    }
+
+    .fizika {
+        width: 358px;
+
+        .symbol {
+            max-width: 70px;
+            min-width: 70px;
+            font-size: 32px;
+        }
+
+        .nameAtom {
+            font-size: 28px;
+        }
+
+        .spImg {
+            // width: 70px;
+            height: 60px;
+        }
+
+        .imgHold {
+            width: 358px;
+        }
+
+        model-viewer {
+
+            height: 300px;
+            width: 358px;
+
+        }
+
+        .span {
+            width: 358px;
+        }
+    }
+
+    .loader {
+        max-width: 358px;
+        min-width: 358px;
+        height: 700px;
+    }
+
+    .navContainer {
+        max-width: 358px;
+        min-width: 358px;
+        margin: auto;
+
+        .linker:hover {
+            text-shadow: 1px 1px 4px black;
+        }
+    }
+
+    .home {
+        margin-top: 0;
+        margin: auto;
+        width: 358px;
+        height: 880px;
+
+        padding-top: 80px;
+
+        .img {
+            height: 175px;
+            width: 358px;
+
+
+
+        }
+
+    }
+
+    .place {
+
+        height: 50px;
+        width: 350px;
+        background-color: #9b9b9b;
+
+        // padding-left: 50px;
+
+        // .search {
+
+        //     width: 230px;
+        //     font-size: 14px;
+        // }
+    }
+
+    .search {
+        max-width: 320px;
+        min-width: 320px;
+    }
+
+    .periodic-table {
+        margin-top: -75px;
+        display: grid;
+        grid-template-columns: repeat(18, 18px);
+        grid-template-rows: repeat(10, 20px);
+        grid-gap: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .element {
+        // background: rgb(218, 253, 229);
+        border: 1px solid transparent;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+
+        .number {
+            font-size: 3px;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+        }
+
+        .name {
+
+            color: transparent;
+
+        }
+
+    }
+
+}
