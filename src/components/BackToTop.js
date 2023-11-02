@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { UpCircleOutlined } from '@ant-design/icons';
+import { UpCircleTwoTone } from '@ant-design/icons';
 
 
 
@@ -26,7 +26,7 @@ export default function BackToTop() {
           <div onClick={handleScrollOnTop}
            className='back-to-top'>
             <div >    
-            <UpCircleOutlined />
+            <UpCircleTwoTone />
             </div>
           
           </div>

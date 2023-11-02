@@ -221,7 +221,7 @@ body {
     bottom: 120px;
     right: 600px;
     font-size: 55px;
-    color: rgb(9, 14, 67);
+    color: rgb(57, 65, 153);
     cursor: pointer;
     border-radius: 4px;
 
@@ -546,11 +546,11 @@ body {
 
 @media screen and (max-width: 430px) {
     .fizika {
-        width: 410px;
+        width: 400px;
     }
 
     .periodic-table {
-        margin-top: 100px;
+        margin-top: -210px;
         display: grid;
         grid-template-columns: repeat(18, 18px);
         grid-template-rows: repeat(10, 20px);
@@ -590,7 +590,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 250px;
+        margin-top: 275px;
         text-align: center;
 
         td {
@@ -638,7 +638,7 @@ body {
 
 
     .periodic-table {
-        margin-top: 150px;
+        margin-top: -250px;
 
     }
 
@@ -649,7 +649,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 250px;
+        margin-top: 280px;
 
     }
 

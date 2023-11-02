@@ -73,20 +73,20 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["noble gas"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Noble gas</td>
             <td
               style={{
                 background: colorMap["unknown, predicted to be noble gas"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Predicted to be noble gas
             </td>
             <td
               style={{
                 background: colorMap["polyatomic nonmetal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Polyatomic nonmetal
             </td>
@@ -97,21 +97,21 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["transition metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Transition metal
             </td>
             <td
               style={{
                 background: colorMap["unknown, probably transition metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Probably transition metal
             </td>
             <td
               style={{
                 background: colorMap["actinide"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Actinide
             </td>
@@ -123,7 +123,7 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["post-transition metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Post-transition metal
             </td>
@@ -131,14 +131,14 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["unknown, probably post-transition metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Probably post-transition metal
             </td>
             <td
               style={{
                 background: colorMap["alkaline earth metal"],
-                padding: "10px"
+                padding: "6px"
               }}>Alkaline earth metal</td>
           </tr>
 
@@ -146,7 +146,7 @@ const Element = () => {
             <td
               style={{
                 background: colorMap.metalloid,
-                padding: "10px"
+                padding: "6px"
               }}>
               Metalloid
             </td>
@@ -154,14 +154,14 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["unknown, probably metalloid"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Probably metalloid
             </td>
             <td
               style={{
                 background: colorMap["diatomic nonmetal"],
-                padding: "10px"
+                padding: "6px"
               }}>Diatomic nonmetal</td>
           </tr>
 
@@ -169,7 +169,7 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["alkali metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Alkali metal
             </td>
@@ -178,7 +178,7 @@ const Element = () => {
             <td
               style={{
                 background: colorMap["unknown, but predicted to be an alkali metal"],
-                padding: "10px"
+                padding: "6px"
               }}>
               Predicted to be an alkali metal
             </td>
@@ -187,7 +187,7 @@ const Element = () => {
             <td
               style={{
                 background: colorMap.lanthanide,
-                padding: "10px"
+                padding: "6px"
               }}>
               Lanthanide
             </td>
