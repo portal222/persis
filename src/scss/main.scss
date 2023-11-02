@@ -83,9 +83,11 @@ body {
         display: flex;
         flex-direction: column;
         font-size: 22px;
+
         div {
             padding: 10px 0px;
         }
+
         p {
             font-size: 18px;
         }
@@ -94,6 +96,7 @@ body {
     .atomDet {
         padding: 3px 20px;
     }
+
     .summary {
         width: 890px;
     }
@@ -177,6 +180,7 @@ body {
         width: 930px;
 
 
+
     }
 
     .atomicMass {
@@ -204,13 +208,6 @@ body {
     }
 }
 
-.fizika strong {
-    padding-top: 15px;
-}
-
-
-
-
 .view-button {
     background-color: transparent;
     border-color: transparent;
@@ -222,29 +219,22 @@ body {
 .back-to-top {
     position: fixed;
     bottom: 120px;
-    right: 480px;
-
-    color: #05020e;
+    right: 600px;
+    font-size: 55px;
+    color: rgb(9, 14, 67);
     cursor: pointer;
     border-radius: 4px;
 
     &:hover {
-        text-shadow:1px 1px 5px rgb(252, 105, 6);
+
+        color: rgb(119, 119, 119);
+
+
+        transform: scale(1.2, 1.2);
+        z-index: 1;
     }
 
-    .arrowup {
-        align-items: center;
-        padding-bottom: 15px;
-     padding-right: 3px;
-        font-size: 55px;
-        width: 24px;
-        height: 24px;
-        color: #100e2aac;
-        background-color:  transparent;
 
-        border-radius: 12px;
-        border: solid 3px #100e2aac;
-    }
 }
 
 
@@ -253,12 +243,13 @@ body {
 
 
 .periodic-table {
+    margin-top: 380px;
     display: grid;
     grid-template-columns: repeat(18, 64px);
     grid-template-rows: repeat(10, 64px);
     grid-gap: 4px;
     position: absolute;
-    margin-top: 360px;
+
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -306,12 +297,30 @@ body {
         height: 20px;
         border-radius: 6px;
     }
+
     .space {
         height: 500px;
     }
 }
 
 
+@media screen and (max-width: 1400px) {
+    .back-to-top {
+        font-size: 45px;
+        bottom: 20px;
+        right: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .back-to-top {
+        font-size: 38px;
+        bottom: 20px;
+        right: 50px;
+    }
+
+}
 
 @media screen and (max-width: 900px) {
     .navContainer {
@@ -330,7 +339,7 @@ body {
         grid-template-rows: repeat(10, 47px);
         grid-gap: 3px;
         position: absolute;
-        
+
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -359,6 +368,7 @@ body {
         .imgHold {
             width: 755px;
         }
+
         .summary {
             width: 740px;
         }
@@ -375,39 +385,65 @@ body {
         }
 
     }
+
+    .elements {
+        margin-top: 5px;
+    }
+
     .category {
         font-size: 16px;
         width: 750px;
         margin: auto;
         margin-top: 530px;
         text-align: center;
-        
+
         td {
             height: 20px;
             width: 250px;
             border-radius: 6px;
         }
+
         .space {
             height: 900px;
         }
     }
+
     .back-to-top {
-   
-        bottom: 20px;
-        right: 50px;}
-}
-
-@media screen and (max-width: 500px) {
-    body {
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-
-
+        font-size: 35px;
+        bottom: 60px;
+        right: 30px;
     }
+}
+@media screen and (max-width: 740px) {
 
+    .periodic-table{
+
+        margin-top:230px;
+    }
+    .category {
+        font-size: 14px;
+        width: 345px;
+        margin: auto;
+        margin-top: 520px;
+        text-align: center;
+
+        td {
+            height: 50px;
+            width: 115px;
+            border-radius: 6px;
+        }
+
+        .space {
+            height: 900px;
+        }
+    }
+    .navContainer {
+        max-width: 400px;
+        min-width: 400px;
+    }
     .fizika {
-        width: 358px;
+        width: 400px;
+
         // padding-left: 10px;
         .head {
             padding-left: 100px;
@@ -418,6 +454,7 @@ body {
             max-width: 358px;
             padding: 3px 10px;
             font-size: 16px;
+
             div {
                 padding: 5px 0px;
             }
@@ -426,9 +463,11 @@ body {
                 font-size: 12px;
             }
         }
+
         .atomDet {
             padding: 2px 12px;
         }
+
         .summary {
             width: 340px;
         }
@@ -499,6 +538,22 @@ body {
         }
     }
 
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .fizika {
+        width: 358px;
+
+    }
+
     .loader {
         max-width: 358px;
         min-width: 358px;
@@ -508,7 +563,7 @@ body {
     .navContainer {
         max-width: 358px;
         min-width: 358px;
-        margin: auto;
+      
 
         .linker:hover {
             text-shadow: 1px 1px 4px black;
@@ -517,9 +572,8 @@ body {
 
 
 
-
-    .periodic-table {
-        margin-top: -180px;
+.periodic-table {
+    margin-top: -250px;
         display: grid;
         grid-template-columns: repeat(18, 18px);
         grid-template-rows: repeat(10, 20px);
@@ -531,7 +585,7 @@ body {
     }
 
     .element {
-        // background: rgb(218, 253, 229);
+      
         border: 1px solid transparent;
         display: flex;
         position: relative;
@@ -562,19 +616,21 @@ body {
         margin: auto;
         margin-top: 250px;
         text-align: center;
-        
+
         td {
             height: 50px;
             width: 115px;
             border-radius: 6px;
         }
+
         .space {
             height: 900px;
         }
     }
+
     .back-to-top {
-      
-        bottom: 20px;
+        font-size: 32px;
+        bottom: 60px;
         right: 20px;
     }
 }
