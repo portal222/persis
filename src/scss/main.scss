@@ -414,12 +414,14 @@ body {
         right: 30px;
     }
 }
-@media screen and (max-width: 740px) {
 
-    .periodic-table{
+@media screen and (max-width: 700px) {
 
-        margin-top:230px;
+    .periodic-table {
+
+        margin-top: 230px;
     }
+
     .category {
         font-size: 14px;
         width: 345px;
@@ -437,10 +439,12 @@ body {
             height: 900px;
         }
     }
+
     .navContainer {
         max-width: 400px;
         min-width: 400px;
     }
+
     .fizika {
         width: 400px;
 
@@ -540,6 +544,67 @@ body {
 
 }
 
+@media screen and (max-width: 430px) {
+    .fizika {
+        width: 410px;
+    }
+
+    .periodic-table {
+        margin-top: -200px;
+        display: grid;
+        grid-template-columns: repeat(18, 18px);
+        grid-template-rows: repeat(10, 20px);
+        grid-gap: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .element {
+
+            border: 1px solid transparent;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+
+            .number {
+                font-size: 3px;
+                position: absolute;
+                top: 0px;
+                left: 9px;
+            }
+
+            .name {
+
+                color: transparent;
+
+            }
+
+        }
+    }
+
+    .category {
+        font-size: 14px;
+        width: 345px;
+        margin: auto;
+        margin-top: 250px;
+        text-align: center;
+
+        td {
+            height: 50px;
+            width: 115px;
+            border-radius: 6px;
+        }
+
+        .space {
+            height: 900px;
+        }
+    }
+}
+
 @media screen and (max-width: 390px) {
     body {
         font-size: 16px;
@@ -563,7 +628,7 @@ body {
     .navContainer {
         max-width: 358px;
         min-width: 358px;
-      
+
 
         .linker:hover {
             text-shadow: 1px 1px 4px black;
@@ -572,42 +637,12 @@ body {
 
 
 
-.periodic-table {
-    margin-top: -150px;
-        display: grid;
-        grid-template-columns: repeat(18, 18px);
-        grid-template-rows: repeat(10, 20px);
-        grid-gap: 1px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .element {
-      
-        border: 1px solid transparent;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        font-family: Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 12px;
-
-        .number {
-            font-size: 3px;
-            position: absolute;
-            top: 0px;
-            left: 9px;
-        }
-
-        .name {
-
-            color: transparent;
-
-        }
+    .periodic-table {
+        margin-top: -250px;
 
     }
+
+
 
 
     .category {
@@ -615,17 +650,7 @@ body {
         width: 345px;
         margin: auto;
         margin-top: 250px;
-        text-align: center;
 
-        td {
-            height: 50px;
-            width: 115px;
-            border-radius: 6px;
-        }
-
-        .space {
-            height: 900px;
-        }
     }
 
     .back-to-top {
