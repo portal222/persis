@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import dataAtom from "../../public/PeriodicTableJSON.json";
-import SearchPlace from "./SearchPlace";
+
 
 
 
@@ -69,43 +69,48 @@ const AtomDet = (props) => {
 
   return (
     <>
-      <div><SearchPlace /></div>
+
 
       <div className="fizika">
+        <div className="warp">
 
         <h1>{atoms.name}</h1>
         <div className="symbol">
-          {atoms.symbol}</div>
+          {atoms.symbol}
+        </div>
+        <div>Number:{atoms.number}</div>
 
 
 
 
+          <div>Atomic mass: {atoms.atomic_mass}</div>
 
-        <div className="fizika" >
+          <div>Group: {atoms.group}</div>
+          <div>Period: {atoms.period}</div>
+          <div>Category: {atoms.category}</div>
 
-          <strong>Category: {atoms.category}</strong>
+          <div>Discovered by: {atoms.discovered_by}</div>
+          <div>Phase: {atoms.phase}</div>
+          <div>Appearance: {atoms.appearance}</div>
+          <div>Density: {atoms.density} </div>
+          <div>Melt: {atoms.melt / 10.17} C</div>
+          <div>Electron affinity: {atoms.electron_affinity}</div>
+          <div>Electron configuration: {atoms.electron_configuration}
+          </div>
+          <div>Electronegativity pauling: {atoms.electronegativity_pauling}</div>
+          <div>Source: <a href={atoms.source} target="_blanc">
+            Wikipedia</a></div>
+          <div className="summary">{atoms.summary}</div>
 
-          <strong>Discovered by: {atoms.discovered_by}</strong>
-          <strong>Phase: {atoms.phase}</strong>
-          <strong>Appearance: {atoms.appearance}</strong>
-          <strong>Atomic_mass: {atoms.atomic_mass}</strong>
-          <strong>Density: {atoms.density} </strong>
-          <strong>Melt: {atoms.melt / 10.17} C</strong>
-          <strong>Electron configuration: {atoms.electron_configuration}
-          </strong>
-          <strong>Source: <a href={atoms.source} target="_blanc">
-            Wikipedia</a></strong>
-          <strong>{atoms.summary}</strong>
 
-
-          <strong>
+          <div>
             <img
               className="imgHold"
               src={image.url}
               alt="nema slike" ></img>
-          </strong>
+          </div>
           <p>{image.attribution}</p>
-          <h3>{image.title}</h3>
+          <div>{image.title}</div>
 
 
         </div>

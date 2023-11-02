@@ -55,23 +55,7 @@ body {
 
 
 
-.place {
-    background-color: #84867b;
-    width: 950px;
 
-    margin: auto;
-
-    padding-bottom: 10px;
-    display: flex;
-    height: 50px;
-    justify-content: center;
-
-    .search {
-        width:130px;
-
-    }
-
-}
 
 .spectral {
     height: 40px;
@@ -82,38 +66,115 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
+
+    // padding: 12px;
+    // padding-left: 75px;
+    // padding-right: 10px;
     background-color: #f4f2eb;
     width: 950px;
 
-    .nameAtom {
+    .head {
+        padding-left: 300px;
+        text-align: center;
+    }
+
+    .warp {
+        padding: 2px 15px;
         display: flex;
-        font-size: 28px;
-        width: 200px;
-        padding-left: 15px;
+        flex-direction: column;
+        font-size: 22px;
+        div {
+            padding: 10px 0px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .atomDet {
+        padding: 3px 20px;
+    }
+    .summary {
+        width: 890px;
+    }
+
+    .nameAtom {
+        padding-top: 15px;
+        // display: flex;
+
+        // justify-content: center;
+        // align-items: center;
+        font-size: 26px;
+        width: 800px;
+        padding-left: 35px;
+
+        &:hover {
+            cursor: pointer;
+            color: #fc9700;
+            text-shadow: 1px 1px 2px black;
+        }
     }
 
     .symbol {
-    
         text-align: center;
-
         width: 90px;
         height: auto;
-        background-color: #b4d1d6;
+        background-color: #fdfdfd;
+        border: 1px solid #100e42;
+
         border-radius: 7px;
         font-size: 52px;
-        color: #e37303;
+        color: #070818;
         font-family: 'Arial Narrow Bold', sans-serif;
+    }
+
+    .symbolClick {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #070818;
+        border: 1px solid #070818;
+        background-color: #ffffff;
+        border-radius: 7px;
+        font-size: 52px;
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+            cursor: pointer;
+
+
+            text-shadow: 1px 1px 2px rgb(254, 155, 48);
+
+        }
+
+        .number {
+            color: #000000;
+            font-size: 18px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .name {
+            color: #000000;
+            font-size: 14px;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
     }
 
 
     .spImg {
-        height: 80px;
+        height: 100px;
     }
 
 
 
     .imgHold {
-        width: 950px;
+        width: 930px;
 
 
     }
@@ -129,7 +190,7 @@ body {
         cursor: grab;
         display: flex;
         height: 700px;
-        width: 950px;
+        width: 925px;
         border-color: #fd4a14;
         overflow: hidden;
         position: relative;
@@ -137,7 +198,7 @@ body {
     }
 
     .span {
-        width: 950px;
+        width: 925px;
         height: 2px;
         border-bottom: solid 2px #828c82;
     }
@@ -160,40 +221,33 @@ body {
 
 .back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 120px;
+    right: 480px;
 
-    color: #84867b;
+    color: #05020e;
     cursor: pointer;
-    border-radius: 400px;
+    border-radius: 4px;
+
+    &:hover {
+        text-shadow:1px 1px 5px rgb(252, 105, 6);
+    }
 
     .arrowup {
         align-items: center;
-
+        padding-bottom: 15px;
+     padding-right: 3px;
+        font-size: 55px;
         width: 24px;
         height: 24px;
-        color: #7a9c99ac;
-        background-color: rgba(165, 206, 195, 0.43);
+        color: #100e2aac;
+        background-color:  transparent;
 
         border-radius: 12px;
-        border: solid 3px #95beba7c;
+        border: solid 3px #100e2aac;
     }
 }
 
-.paper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    min-width: 185px;
-    max-width: 185px;
 
-    .base {
-        max-width: 140px;
-        padding-left: 10px;
-
-    }
-
-}
 
 
 
@@ -204,13 +258,13 @@ body {
     grid-template-rows: repeat(10, 64px);
     grid-gap: 4px;
     position: absolute;
-    top: 50%;
+    margin-top: 360px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .element {
-  
+
     border: 1px solid #aaa;
     display: flex;
     position: relative;
@@ -240,36 +294,57 @@ body {
     z-index: 1;
 }
 
+.category {
+    font-size: 20px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 750px;
+    text-align: center;
+
+    td {
+        width: 400px;
+        height: 20px;
+        border-radius: 6px;
+    }
+    .space {
+        height: 500px;
+    }
+}
+
 
 
 @media screen and (max-width: 900px) {
     .navContainer {
         max-width: 780px;
         min-width: 780px;
- 
+
 
         margin: auto;
-     
+
     }
+
     .periodic-table {
-        margin-top: 230px;
+        margin-top: 240px;
         display: grid;
         grid-template-columns: repeat(18, 36px);
         grid-template-rows: repeat(10, 47px);
         grid-gap: 3px;
         position: absolute;
-        top: 50%;
+        
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .element {
         top: 25px;
         font-size: 22px;
+
         .number {
             font-size: 6;
             top: 0px;
             right: 1px;
         }
+
         .name {
 
             color: transparent;
@@ -277,25 +352,49 @@ body {
         }
 
     }
+
     .fizika {
         width: 780px;
+
         .imgHold {
-            width: 780px;
+            width: 755px;
         }
+        .summary {
+            width: 740px;
+        }
+
         model-viewer {
 
             height: 500px;
-            width: 780px;
+            width: 720px;
 
         }
+
         .span {
-            width: 780px;
+            width: 755px;
+        }
+
+    }
+    .category {
+        font-size: 16px;
+        width: 750px;
+        margin: auto;
+        margin-top: 530px;
+        text-align: center;
+        
+        td {
+            height: 20px;
+            width: 250px;
+            border-radius: 6px;
+        }
+        .space {
+            height: 900px;
         }
     }
-    .place {
-        width: 780px;
-    }
-    
+    .back-to-top {
+   
+        bottom: 20px;
+        right: 50px;}
 }
 
 @media screen and (max-width: 500px) {
@@ -303,12 +402,36 @@ body {
         font-size: 16px;
         margin: 0;
         padding: 0;
-      
-        
+
+
     }
 
     .fizika {
         width: 358px;
+        // padding-left: 10px;
+        .head {
+            padding-left: 100px;
+            font-size: 26px;
+        }
+
+        .warp {
+            max-width: 358px;
+            padding: 3px 10px;
+            font-size: 16px;
+            div {
+                padding: 5px 0px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+        .atomDet {
+            padding: 2px 12px;
+        }
+        .summary {
+            width: 340px;
+        }
 
         .symbol {
             max-width: 70px;
@@ -317,8 +440,43 @@ body {
         }
 
         .nameAtom {
-            font-size: 28px;
+            padding-left: 15px;
+            font-size: 25px;
         }
+
+        .symbolClick {
+
+
+
+            font-size: 42px;
+            width: 80px;
+            height: 80px;
+
+            &:hover {
+                cursor: pointer;
+
+
+                text-shadow: 1px 1px 3px #f3b85f;
+
+            }
+
+            .number {
+                color: #000000;
+                font-size: 16px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+
+            .name {
+                color: #000000;
+                font-size: 11px;
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+            }
+        }
+
 
         .spImg {
             // width: 70px;
@@ -326,18 +484,18 @@ body {
         }
 
         .imgHold {
-            width: 358px;
+            width: 343px;
         }
 
         model-viewer {
 
             height: 300px;
-            width: 358px;
+            width: 343px;
 
         }
 
         .span {
-            width: 358px;
+            width: 343px;
         }
     }
 
@@ -357,46 +515,11 @@ body {
         }
     }
 
-    .home {
-        margin-top: 0;
-        margin: auto;
-        width: 358px;
-        height: 880px;
-
-        padding-top: 80px;
-
-        .img {
-            height: 175px;
-            width: 358px;
 
 
-
-        }
-
-    }
-
-    .place {
-
-        height: 50px;
-        width: 350px;
-        background-color: #9b9b9b;
-
-        // padding-left: 50px;
-
-        // .search {
-
-        //     width: 230px;
-        //     font-size: 14px;
-        // }
-    }
-
-    .search {
-        max-width: 320px;
-        min-width: 320px;
-    }
 
     .periodic-table {
-        margin-top: -75px;
+        margin-top: -250px;
         display: grid;
         grid-template-columns: repeat(18, 18px);
         grid-template-rows: repeat(10, 20px);
@@ -415,13 +538,13 @@ body {
         align-items: center;
         justify-content: center;
         font-family: Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
 
         .number {
             font-size: 3px;
             position: absolute;
             top: 0px;
-            left: 5px;
+            left: 9px;
         }
 
         .name {
@@ -432,4 +555,26 @@ body {
 
     }
 
+
+    .category {
+        font-size: 14px;
+        width: 345px;
+        margin: auto;
+        margin-top: 320px;
+        text-align: center;
+        
+        td {
+            height: 50px;
+            width: 115px;
+            border-radius: 6px;
+        }
+        .space {
+            height: 900px;
+        }
+    }
+    .back-to-top {
+      
+        bottom: 20px;
+        right: 20px;
+    }
 }

@@ -3,11 +3,8 @@ import { Link, Routes, Route, NavLink, HashRouter } from 'react-router-dom';
 import Fizika from "./Fizika";
 
 import Element from "./Element";
-
-import SearchResultsAtoms from "./SearchResultsAtoms";
-
-
 import AtomDet from "./AtomDet";
+
 
 export default function Navigation() {
   return (
@@ -40,12 +37,16 @@ export default function Navigation() {
         <Route path="/" element={<Fizika />} />
         <Route path="/table" element={<Element />} />
     
-        <Route path="/searchAtoms" element={<SearchResultsAtoms />} />
+      
     
         <Route path="/:atomNum" element={<AtomDet />} />
+     
 
       </Routes>
-    
+      <div className="home">
+        <div className="img"></div>
+        {/* <img src="../img/politic-glob.png" alt="globus" /> */}
+      </div>
 
     </HashRouter>
   )
