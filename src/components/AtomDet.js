@@ -54,11 +54,11 @@ const AtomDet = (props) => {
 
   const getAtoms = () => {
     const atomNum = params.atomNum;
-    console.log("doslo sa klikom", atomNum - 1)
+ 
 
     const data = dataAtom.elements;
 
-    console.log("Detalj atoma bez axios", data[atomNum - 1]);
+   
     setAtoms(data[atomNum - 1]);
     setImage(data[atomNum - 1].image);
   }
@@ -118,7 +118,7 @@ const AtomDet = (props) => {
 
 
 
-        {/* dodatak za 3d na dole */}
+     
         <model-viewer
           src={atoms.bohr_model_3d}
 
@@ -144,7 +144,7 @@ const AtomDet = (props) => {
             ></button>
           ))}
         </model-viewer>
-        {/* kraj dodatka za 3d */}
+     
         <div className="span"></div>
       </div>
     </>

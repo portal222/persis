@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../public/PeriodicTableJSON.json";
-// import "./PeriodicTable.css";
+
 import { useNavigate } from "react-router-dom";
 
 
@@ -35,7 +35,7 @@ const Element = () => {
     navigate(LinkTo);
   }
   const handleCategory = (categoryName) => {
-    console.log("klik na kategoriju", categoryName);
+   
     const LinkTo = `/catname/${categoryName}`;
     navigate(LinkTo);
   }
@@ -54,7 +54,7 @@ const Element = () => {
               gridRow: element.ypos,
               gridColumn: element.xpos,
               background: colorMap[element.category],
-              // borderColor: colorMap[element.category],
+           
             }}
           >
             <div
@@ -174,7 +174,7 @@ const Element = () => {
               Alkali metal
             </td>
 
-            {/* ovde */}
+       
             <td
               style={{
                 background: colorMap["unknown, but predicted to be an alkali metal"],
@@ -202,12 +202,7 @@ const Element = () => {
 
 
 
-      {/* {data.elements.map((element) => (
-          <div
-
-            onClick={() => handleCategory(element.category)}
-          >Transition metal: {element.category} </div>
-        ))} */}
+     
 
     </>
   );

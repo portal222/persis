@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes, Route, NavLink, HashRouter } from 'react-router-dom';
+import { Link, Routes, Route, HashRouter } from 'react-router-dom';
 import Fizika from "./Fizika";
 
 import Element from "./Element";
@@ -33,7 +33,7 @@ export default function Navigation() {
       </div>
       <Routes>
 
-        {/* <Route path="/" element={<Home />} /> */}
+  
         <Route path="/" element={<Fizika />} />
         <Route path="/table" element={<Element />} />
     
@@ -45,7 +45,7 @@ export default function Navigation() {
       </Routes>
       <div className="home">
         <div className="img"></div>
-        {/* <img src="../img/politic-glob.png" alt="globus" /> */}
+    
       </div>
 
     </HashRouter>
