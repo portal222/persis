@@ -221,13 +221,13 @@ body {
     bottom: 120px;
     right: 600px;
     font-size: 55px;
-    color: rgb(57, 65, 153);
+
     cursor: pointer;
-    border-radius: 4px;
+
 
     &:hover {
 
-        color: rgb(119, 119, 119);
+      
 
 
         transform: scale(1.2, 1.2);
@@ -550,7 +550,7 @@ body {
     }
 
     .periodic-table {
-        margin-top: -210px;
+        margin-top: -110px;
         display: grid;
         grid-template-columns: repeat(18, 18px);
         grid-template-rows: repeat(10, 20px);
@@ -590,7 +590,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 275px;
+        margin-top: 295px;
         text-align: center;
 
         td {
@@ -638,7 +638,7 @@ body {
 
 
     .periodic-table {
-        margin-top: -250px;
+        margin-top: -150px;
 
     }
 
@@ -649,7 +649,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 280px;
+        margin-top: 320px;
 
     }
 

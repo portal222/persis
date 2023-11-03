@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import dataAtom from "../../public/PeriodicTableJSON.json";
+import BackToTop from "./BackToTop";
 
 
 
@@ -147,6 +148,7 @@ const AtomDet = (props) => {
      
         <div className="span"></div>
       </div>
+      <div><BackToTop /></div>
     </>
   )
 }
