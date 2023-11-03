@@ -221,13 +221,13 @@ body {
     bottom: 120px;
     right: 600px;
     font-size: 55px;
-
+    color: rgb(9, 14, 67);
     cursor: pointer;
-
+    border-radius: 4px;
 
     &:hover {
 
-      
+        color: rgb(119, 119, 119);
 
 
         transform: scale(1.2, 1.2);
@@ -349,7 +349,7 @@ body {
         font-size: 22px;
 
         .number {
-            font-size: 6;
+            font-size: 10px;
             top: 0px;
             right: 1px;
         }
@@ -415,23 +415,45 @@ body {
     }
 }
 
-@media screen and (max-width: 680x) {
+@media screen and (max-width: 670px) {
+
+ 
 
     .periodic-table {
 
         margin-top: 230px;
+        display: grid;
+        grid-template-columns: repeat(18, 32px);
+        grid-template-rows: repeat(10, 34px);
+    }
+    .element {
+        top: 25px;
+        font-size: 18px;
+
+        .number {
+            font-size: 8px;
+            top: 0px;
+            right: 1px;
+        }
+
+        .name {
+
+            color: transparent;
+
+        }
+
     }
 
     .category {
-        font-size: 8px;
-        width: 250px;
+        font-size: 14px;
+        width: 600px;
         margin: auto;
         margin-top: 520px;
         text-align: center;
 
         td {
-            height: 50px;
-            width: 115px;
+            height: 40px;
+            width: 200px;
             border-radius: 6px;
         }
 
@@ -441,8 +463,8 @@ body {
     }
 
     .navContainer {
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 630px;
+        min-width: 630px;
     }
 
     .fizika {
@@ -550,7 +572,7 @@ body {
     }
 
     .periodic-table {
-        margin-top: -110px;
+        margin-top: -200px;
         display: grid;
         grid-template-columns: repeat(18, 18px);
         grid-template-rows: repeat(10, 20px);
@@ -649,7 +671,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 320px;
+        margin-top: 300px;
 
     }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { UpCircleTwoTone } from '@ant-design/icons';
 
+import { Space } from 'antd';
 
 
 export default function BackToTop() {
@@ -25,9 +26,9 @@ export default function BackToTop() {
         <span>
           <div onClick={handleScrollOnTop}
            className='back-to-top'>
-            <div >    
-            <UpCircleTwoTone />
-            </div>
+              <Space >    
+            <UpCircleTwoTone twoToneColor="#d9d9d9"/>
+            </Space>
           
           </div>
         </span>
