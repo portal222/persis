@@ -47,15 +47,7 @@ body {
             text-shadow: 2px 2px 7px black;
         }
     }
-
-
-
-
 }
-
-
-
-
 
 .spectral {
     height: 40px;
@@ -66,11 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-
-    // padding: 12px;
-    // padding-left: 75px;
-    // padding-right: 10px;
-    background-color: #f4f2eb;
+   background-color: #f4f2eb;
     width: 950px;
 
     .head {
@@ -219,7 +207,7 @@ body {
 .back-to-top {
     position: fixed;
     bottom: 120px;
-    right: 600px;
+    right: 300px;
     font-size: 55px;
     color: rgb(9, 14, 67);
     cursor: pointer;
@@ -324,8 +312,8 @@ body {
 
 @media screen and (max-width: 900px) {
     .navContainer {
-        max-width: 780px;
-        min-width: 780px;
+        max-width: 660px;
+        min-width: 660px;
 
 
         margin: auto;
@@ -363,7 +351,7 @@ body {
     }
 
     .fizika {
-        width: 780px;
+        width: 660px;
 
         .imgHold {
             width: 755px;
@@ -376,12 +364,12 @@ body {
         model-viewer {
 
             height: 500px;
-            width: 720px;
+            width: 640px;
 
         }
 
         .span {
-            width: 755px;
+            width: 730px;
         }
 
     }
@@ -392,14 +380,14 @@ body {
 
     .category {
         font-size: 16px;
-        width: 750px;
+        width: 660px;
         margin: auto;
         margin-top: 530px;
         text-align: center;
 
         td {
             height: 20px;
-            width: 250px;
+            width: 220px;
             border-radius: 6px;
         }
 
@@ -412,6 +400,22 @@ body {
         font-size: 35px;
         bottom: 60px;
         right: 30px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .navContainer {
+        max-width: 500px;
+        min-width: 500px;
+
+
+        margin: auto;
+
+    }
+    .category {
+        width: 600px;
+    }
+    .fizika {
+        width: 600px;
     }
 }
 
@@ -463,12 +467,12 @@ body {
     }
 
     .navContainer {
-        max-width: 630px;
-        min-width: 630px;
+        max-width: 600px;
+        min-width: 600px;
     }
 
     .fizika {
-        width: 400px;
+        width: 600px;
 
         // padding-left: 10px;
         .head {
