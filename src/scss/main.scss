@@ -415,7 +415,7 @@ body {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 680x) {
 
     .periodic-table {
 
@@ -423,8 +423,8 @@ body {
     }
 
     .category {
-        font-size: 14px;
-        width: 345px;
+        font-size: 8px;
+        width: 250px;
         margin: auto;
         margin-top: 520px;
         text-align: center;
@@ -590,7 +590,7 @@ body {
         font-size: 14px;
         width: 345px;
         margin: auto;
-        margin-top: 295px;
+        margin-top: 280px;
         text-align: center;
 
         td {
