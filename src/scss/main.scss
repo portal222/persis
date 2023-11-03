@@ -312,8 +312,8 @@ body {
 
 @media screen and (max-width: 900px) {
     .navContainer {
-        max-width: 660px;
-        min-width: 660px;
+        max-width: 700px;
+        min-width: 700px;
 
 
         margin: auto;
@@ -351,25 +351,25 @@ body {
     }
 
     .fizika {
-        width: 660px;
+        width: 700px;
 
         .imgHold {
-            width: 755px;
+            width: 700px;
         }
 
         .summary {
-            width: 740px;
+            width: 690px;
         }
 
         model-viewer {
 
             height: 500px;
-            width: 640px;
+            width: 660px;
 
         }
 
         .span {
-            width: 730px;
+            width: 700px;
         }
 
     }
@@ -404,8 +404,8 @@ body {
 }
 @media screen and (max-width: 730px) {
     .navContainer {
-        max-width: 500px;
-        min-width: 500px;
+        max-width: 600px;
+        min-width: 600px;
 
 
         margin: auto;
