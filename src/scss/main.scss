@@ -91,10 +91,7 @@ body {
 
     .nameAtom {
         padding-top: 15px;
-        // display: flex;
-
-        // justify-content: center;
-        // align-items: center;
+   
         font-size: 26px;
         width: 800px;
         padding-left: 35px;
@@ -402,10 +399,10 @@ body {
         right: 30px;
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 750px) {
     .navContainer {
-        max-width: 700px;
-        min-width: 700px;
+        max-width: 750px;
+        min-width: 750px;
 
 
         margin: auto;
@@ -415,18 +412,18 @@ body {
         width: 600px;
     }
     .fizika {
-        width: 700px;
+        width: 750px;
         .imgHold {
-            width: 690px;
+            width: 730px;
         }
 
         .summary {
-            width: 680px;
+            width: 730px;
         }
         model-viewer {
 
             height: 500px;
-            width: 620px;
+            width: 680px;
 
         }
 
