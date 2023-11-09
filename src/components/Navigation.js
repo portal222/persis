@@ -4,7 +4,7 @@ import Fizika from "./Fizika";
 
 import Element from "./Element";
 import AtomDet from "./AtomDet";
-import SearchResultsColor from "./SearchResultsColor";
+
 
 
 
@@ -26,13 +26,6 @@ export default function Navigation() {
           </Link>
         </p>
 
-
-
-
-
-
-
-
       </div>
       <Routes>
 
@@ -43,7 +36,7 @@ export default function Navigation() {
       
     
         <Route path="/:atomNum" element={<AtomDet />} />
-        <Route path="/searchColor" element={<SearchResultsColor />} />
+   
      
 
       </Routes>
