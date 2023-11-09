@@ -5,7 +5,7 @@ import Fizika from "./Fizika";
 import Element from "./Element";
 import AtomDet from "./AtomDet";
 import SearchResultsColor from "./SearchResultsColor";
-import SearchBoxColor from "./SearchBoxColor";
+
 
 
 export default function Navigation() {
@@ -19,9 +19,7 @@ export default function Navigation() {
           ELEMENTS
           </Link>
         </p>
-        <p>
-        <SearchBoxColor placeholder={' Pretraži boje'} linkTo={'/searchColor'}  />
-        </p>
+      
         <p>
           <Link to='/table' className="linker">
            PERIODIC TABLE
