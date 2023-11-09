@@ -4,6 +4,8 @@ import Fizika from "./Fizika";
 
 import Element from "./Element";
 import AtomDet from "./AtomDet";
+import SearchResultsColor from "./SearchResultsColor";
+import SearchBoxColor from "./SearchBoxColor";
 
 
 export default function Navigation() {
@@ -16,6 +18,9 @@ export default function Navigation() {
           <Link to='/' className="linker">
           ELEMENTS
           </Link>
+        </p>
+        <p>
+        <SearchBoxColor placeholder={' Pretraži boje'} linkTo={'/searchColor'}  />
         </p>
         <p>
           <Link to='/table' className="linker">
@@ -40,6 +45,7 @@ export default function Navigation() {
       
     
         <Route path="/:atomNum" element={<AtomDet />} />
+        <Route path="/searchColor" element={<SearchResultsColor />} />
      
 
       </Routes>
